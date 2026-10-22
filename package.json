@@ -1,0 +1,23 @@
+{
+  "name": "api-runtime-vulnerabilities-demo",
+  "version": "1.0.0",
+  "description": "Demonstrasi reproduksi dan mitigasi celah runtime di integrasi API (PHP2Shell & Node.js Brotli decoder)",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/node/*.test.mjs",
+    "test:php": "php tests/php/upload_progress_test.php",
+    "audit": "bash scripts/audit-ghost-binaries.sh"
+  },
+  "keywords": [
+    "cve-2026-111497",
+    "cve-2026-109618",
+    "cve-2026-109619",
+    "php2shell",
+    "brotli",
+    "nodejs",
+    "php",
+    "security"
+  ],
+  "author": "Nextmend",
+  "license": "MIT"
+}
